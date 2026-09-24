@@ -98,26 +98,27 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="hero-two-actions">
-              <button
+              <a
+                href="#projects"
                 className="hero-btn-filled"
-                onClick={() => scrollTo('projects')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo('projects');
+                }}
+                id="hero-view-projects-btn"
               >
-                VIEW MY WORK
-              </button>
-              <button
+                VIEW MY PROJECTS
+              </a>
+              <a
+                href="#contact"
                 className="hero-btn-outline"
-                onClick={() => scrollTo('contact')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo('contact');
+                }}
+                id="hero-get-in-touch-btn"
               >
                 GET IN TOUCH
-              </button>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="hero-btn-resume"
-                id="hero-view-resume-btn"
-              >
-                VIEW RESUME ↗
               </a>
             </div>
 

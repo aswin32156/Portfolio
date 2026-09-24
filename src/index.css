@@ -563,11 +563,16 @@ body, .navbar, .glass-card, .info-block, .about-card,
   transition: var(--transition);
   font-family: inherit;
   box-shadow: 0 4px 20px rgba(0,212,255,0.25);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-btn-filled:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(0,212,255,0.4);
+  color: #fff;
 }
 
 .hero-btn-outline {
@@ -583,6 +588,10 @@ body, .navbar, .glass-card, .info-block, .about-card,
   cursor: pointer;
   transition: var(--transition);
   font-family: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-btn-outline:hover {
