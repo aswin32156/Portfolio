@@ -13,7 +13,7 @@ export default function Education() {
   }, []);
 
   return (
-    <section id="education" ref={ref} style={{ background: 'rgba(13,18,32,0.5)' }}>
+    <section id="education" ref={ref} className="section-alt">
       <div className="container">
         <div className="section-header reveal">
           <div className="section-label">Education</div>
@@ -46,8 +46,8 @@ export default function Education() {
           </div>
 
           {/* Core subjects */}
-          <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-            <div style={{ fontSize: '0.75rem', fontWeight: '700', color: 'var(--accent-cyan)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '14px', fontFamily: 'var(--font-mono)' }}>
+          <div className="edu-subjects-box">
+            <div className="edu-subjects-title">
               Key Subjects
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -61,14 +61,7 @@ export default function Education() {
                 'Web Technologies',
                 'Java Programming',
               ].map(s => (
-                <span key={s} style={{
-                  fontSize: '0.8rem',
-                  padding: '5px 12px',
-                  background: 'rgba(59,130,246,0.08)',
-                  border: '1px solid rgba(59,130,246,0.18)',
-                  borderRadius: '8px',
-                  color: 'var(--text-secondary)',
-                }}>{s}</span>
+                <span key={s} className="edu-subject-chip">{s}</span>
               ))}
             </div>
           </div>

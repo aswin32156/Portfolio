@@ -58,7 +58,7 @@ export default function DevelopmentJourney() {
   }, []);
 
   return (
-    <section id="journey" ref={ref} style={{ background: 'rgba(13,18,32,0.5)' }}>
+    <section id="journey" ref={ref} className="section-alt">
       <div className="container">
         <div className="section-header reveal">
           <div className="section-label">Development Journey</div>

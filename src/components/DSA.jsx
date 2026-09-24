@@ -23,7 +23,7 @@ export default function DSA() {
   }, []);
 
   return (
-    <section id="dsa" ref={ref} style={{ background: 'rgba(13,18,32,0.5)' }}>
+    <section id="dsa" ref={ref} className="section-alt">
       <div className="container">
         <div className="section-header reveal">
           <div className="section-label">Problem Solving</div>
@@ -73,26 +73,10 @@ export default function DSA() {
             { icon: '🟠', name: 'HackerRank', note: 'Practicing' },
             { icon: '🟢', name: 'GeeksforGeeks', note: 'Learning' },
           ].map((p) => (
-            <div key={p.name} style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              padding: '12px 20px',
-              background: 'var(--bg-glass)',
-              border: '1px solid var(--border-glass)',
-              borderRadius: '10px',
-              fontSize: '0.85rem',
-            }}>
+            <div key={p.name} className="dsa-platform-card">
               <span>{p.icon}</span>
-              <span style={{ color: 'var(--text-primary)', fontWeight: '600' }}>{p.name}</span>
-              <span style={{
-                fontSize: '0.72rem',
-                padding: '2px 8px',
-                background: 'rgba(0,212,255,0.08)',
-                color: 'var(--accent-cyan)',
-                borderRadius: '6px',
-                border: '1px solid rgba(0,212,255,0.15)'
-              }}>{p.note}</span>
+              <span className="dsa-platform-name">{p.name}</span>
+              <span className="dsa-platform-status">{p.note}</span>
             </div>
           ))}
         </div>

@@ -28,7 +28,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" ref={ref} style={{ background: 'rgba(13,18,32,0.5)' }}>
+    <section id="skills" ref={ref} className="section-alt">
       <div className="container">
         <div className="section-header reveal">
           <div className="section-label">Technical Skills</div>
@@ -92,14 +92,7 @@ export default function Skills() {
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                   {skills.map(s => (
-                    <span key={s} style={{
-                      fontSize: '0.78rem',
-                      padding: '3px 8px',
-                      background: 'rgba(255,255,255,0.04)',
-                      borderRadius: '6px',
-                      color: 'var(--text-secondary)',
-                      border: '1px solid rgba(255,255,255,0.06)'
-                    }}>{s}</span>
+                    <span key={s} className="skill-pill-chip">{s}</span>
                   ))}
                 </div>
               </div>

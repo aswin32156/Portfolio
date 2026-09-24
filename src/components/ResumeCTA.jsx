@@ -13,7 +13,7 @@ export default function ResumeCTA() {
   }, []);
 
   return (
-    <section id="resume" ref={ref} style={{ background: 'rgba(13,18,32,0.5)' }}>
+    <section id="resume" ref={ref} className="section-alt">
       <div className="container">
         <div className="resume-cta reveal">
           <div style={{ fontSize: '3rem', marginBottom: '16px' }}>📄</div>

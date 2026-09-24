@@ -92,18 +92,7 @@ export default function About() {
               <div className="info-block-title">Core Skills</div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', paddingTop: '4px' }}>
                 {coreSkills.map(s => (
-                  <span
-                    key={s}
-                    style={{
-                      fontSize: '0.8rem',
-                      padding: '5px 13px',
-                      background: 'rgba(0,212,255,0.07)',
-                      border: '1px solid rgba(0,212,255,0.18)',
-                      borderRadius: '20px',
-                      color: 'var(--accent-cyan)',
-                      fontWeight: '500',
-                    }}
-                  >
+                  <span key={s} className="about-core-skill-chip">
                     {s}
                   </span>
                 ))}

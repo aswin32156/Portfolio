@@ -93,13 +93,7 @@ export default function Contact() {
                 <a
                   href="/resume.pdf"
                   download
-                  className="cert-btn"
-                  style={{
-                    padding: '8px 12px',
-                    background: 'rgba(255, 255, 255, 0.05)',
-                    borderColor: 'rgba(255, 255, 255, 0.15)',
-                    color: 'var(--text-secondary)'
-                  }}
+                  className="cert-btn contact-download-btn"
                   title="Download Resume PDF"
                   aria-label="Download Resume"
                 >
