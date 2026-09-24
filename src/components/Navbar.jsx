@@ -31,8 +31,9 @@ export default function Navbar({ activeSection }) {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container navbar-inner">
-          <span className="nav-logo" onClick={() => scrollTo('home')}>
-            &lt;Aswin /&gt;
+          <span className="nav-logo" onClick={() => scrollTo('home')} style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}>
+            <img src="/favicon.svg" alt="Aswin Logo" style={{ width: '26px', height: '26px', borderRadius: '7px' }} />
+            <span>&lt;Aswin /&gt;</span>
           </span>
           <ul className="nav-links">
             {links.map((l) => (

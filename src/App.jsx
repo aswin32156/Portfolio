@@ -90,7 +90,10 @@ function ParticleCanvas() {
 function LoadingScreen({ done }) {
   return (
     <div className={`loading-screen ${done ? 'hidden' : ''}`}>
-      <div className="loading-logo">&lt;Aswin /&gt;</div>
+      <div className="loading-logo" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+        <img src="/favicon.svg" alt="Aswin Logo" style={{ width: '40px', height: '40px', borderRadius: '12px', filter: 'drop-shadow(0 0 16px rgba(0, 212, 255, 0.4))' }} />
+        <span>&lt;Aswin /&gt;</span>
+      </div>
       <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '8px' }}>
         Initializing portfolio...
       </div>

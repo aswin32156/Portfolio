@@ -1,22 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
   <defs>
-    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00d4ff"/>
-      <stop offset="100%" stop-color="#3b82f6"/>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#14223d" />
+      <stop offset="60%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#050811" />
+    </radialGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#4facfe" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#7000ff" stop-opacity="0.8" />
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1424"/>
-      <stop offset="100%" stop-color="#050811"/>
+
+    <!-- Left Facet Gradient -->
+    <linearGradient id="leftFacet" x1="20%" y1="100%" x2="80%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
     </linearGradient>
+
+    <!-- Right Facet Gradient -->
+    <linearGradient id="rightFacet" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Core Floating Gem Gradient -->
+    <linearGradient id="gemGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#38ef7d" />
+    </linearGradient>
+
+    <!-- Drop Shadows for 3D Layering -->
+    <filter id="shadowLeft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="-2" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+    <filter id="glowAmbient" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
-  <!-- Background Rounded Squircle -->
-  <rect width="64" height="64" rx="16" fill="url(#bgGrad)"/>
-  <rect x="1.5" y="1.5" width="61" height="61" rx="14.5" stroke="url(#favGrad)" stroke-width="2" stroke-opacity="0.7"/>
-  <!-- Left Bracket < -->
-  <path d="M17 22L9 32L17 42" stroke="#00d4ff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Letter A Monogram -->
-  <path d="M24 42L32 20L40 42" stroke="url(#favGrad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M27.5 34.5H36.5" stroke="url(#favGrad)" stroke-width="3.8" stroke-linecap="round"/>
-  <!-- Right Bracket > -->
-  <path d="M47 22L55 32L47 42" stroke="#3b82f6" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Outer Rounded Squircle Base -->
+  <rect x="4" y="4" width="120" height="120" rx="34" fill="url(#bgGlow)" />
+  <rect x="4.5" y="4.5" width="119" height="119" rx="33.5" stroke="url(#borderGrad)" stroke-width="2.5" />
+
+  <!-- Inner Ambient Glow Circle -->
+  <circle cx="64" cy="62" r="38" fill="#00d4ff" fill-opacity="0.08" filter="url(#glowAmbient)" />
+
+  <!-- Geometric Luxury Monogram "A" -->
+  <g id="monogram-a">
+    <!-- Left Wing Facet (Folded Depth) -->
+    <path d="M 64 24 L 32 94 L 46 94 L 64 53 L 64 24 Z" 
+          fill="url(#leftFacet)" 
+          filter="url(#shadowLeft)" />
+
+    <!-- Right Wing Facet (Overlapping Front Fold) -->
+    <path d="M 64 24 L 64 53 L 82 94 L 96 94 L 64 24 Z" 
+          fill="url(#rightFacet)" />
+
+    <!-- Floating Luminous Core Bridge / Diamond Cut -->
+    <polygon points="46,71 82,71 77,63 51,63" 
+             fill="url(#gemGrad)" 
+             opacity="0.95" />
+
+    <!-- Apex Precision Light Point -->
+    <circle cx="64" cy="24" r="3.5" fill="#ffffff" />
+    <circle cx="64" cy="24" r="7" fill="#00f2fe" fill-opacity="0.5" filter="url(#glowAmbient)" />
+  </g>
 </svg>
