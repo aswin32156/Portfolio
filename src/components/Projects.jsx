@@ -94,7 +94,6 @@ const filterMap = {
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('All');
-  const [visibleProjects, setVisibleProjects] = useState(projects);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -106,14 +105,13 @@ export default function Projects() {
     return () => observer.disconnect();
   }, []);
 
+  const activeKey = filterMap[activeFilter] || 'all';
+  const visibleProjects = activeKey === 'all'
+    ? projects
+    : projects.filter(p => p.filter.includes(activeKey));
+
   const handleFilter = (f) => {
     setActiveFilter(f);
-    const key = filterMap[f];
-    if (key === 'all') {
-      setVisibleProjects(projects);
-    } else {
-      setVisibleProjects(projects.filter(p => p.filter.includes(key)));
-    }
   };
 
   return (
@@ -146,7 +144,11 @@ export default function Projects() {
         ) : (
           <div className="projects-grid">
             {visibleProjects.map((project, i) => (
-              <div className="reveal project-grid-item" key={project.id} style={{ transitionDelay: `${i * 0.1}s` }}>
+              <div
+                className="project-grid-item"
+                key={`${activeFilter}-${project.id}`}
+                style={{ animationDelay: `${i * 0.05}s` }}
+              >
                 <ProjectCard project={project} />
               </div>
             ))}
