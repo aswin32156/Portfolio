@@ -40,15 +40,15 @@ export default function Contact() {
               in software development. Feel free to reach out!
             </p>
 
-            <a href="mailto:your.email@example.com" className="contact-item">
+            <a href="mailto:aswinsaravanan564@gmail.com" className="contact-item">
               <div className="contact-item-icon">✉️</div>
               <div>
                 <div className="contact-item-label">Email</div>
-                <div className="contact-item-value">your.email@example.com</div>
+                <div className="contact-item-value">aswinsaravanan564@gmail.com</div>
               </div>
             </a>
 
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer" className="contact-item">
+            <a href="https://www.linkedin.com/in/aswin-s-9522b32a3/" target="_blank" rel="noreferrer" className="contact-item">
               <div className="contact-item-icon">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -56,7 +56,7 @@ export default function Contact() {
               </div>
               <div>
                 <div className="contact-item-label">LinkedIn</div>
-                <div className="contact-item-value">linkedin.com/in/your-profile</div>
+                <div className="contact-item-value">linkedin.com/in/aswin-s-9522b32a3/</div>
               </div>
             </a>
 
@@ -72,8 +72,40 @@ export default function Contact() {
               </div>
             </a>
 
-            <div style={{ padding: '14px', background: 'rgba(0,212,255,0.04)', border: '1px solid rgba(0,212,255,0.1)', borderRadius: '10px', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
-              Note: Replace the placeholder links above with your actual contact details.
+            <div className="contact-item" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                <div className="contact-item-icon">📄</div>
+                <div>
+                  <div className="contact-item-label">Resume / CV</div>
+                  <div className="contact-item-value">Aswin S — Resume.pdf</div>
+                </div>
+              </div>
+              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cert-btn"
+                  id="view-resume-contact-btn"
+                >
+                  View Resume ↗
+                </a>
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="cert-btn"
+                  style={{
+                    padding: '8px 12px',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    borderColor: 'rgba(255, 255, 255, 0.15)',
+                    color: 'var(--text-secondary)'
+                  }}
+                  title="Download Resume PDF"
+                  aria-label="Download Resume"
+                >
+                  ↓
+                </a>
+              </div>
             </div>
           </div>
 

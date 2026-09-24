@@ -25,13 +25,22 @@ export default function ResumeCTA() {
             and professional experience in detail.
           </p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/resume.pdf" download className="btn-primary" style={{ fontSize: '0.95rem', padding: '14px 36px' }}>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary"
+              style={{ fontSize: '0.95rem', padding: '14px 32px' }}
+            >
+              View Resume ↗
+            </a>
+            <a href="/resume.pdf" download className="btn-secondary" style={{ fontSize: '0.95rem', padding: '14px 32px' }}>
               ↓ Download Resume
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:aswinsaravanan564@gmail.com"
               className="btn-secondary"
-              style={{ fontSize: '0.95rem', padding: '14px 36px' }}
+              style={{ fontSize: '0.95rem', padding: '14px 32px' }}
             >
               ✉ Get in Touch
             </a>

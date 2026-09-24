@@ -21,7 +21,7 @@ export default function Footer({ onBackToTop }) {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/aswin-s-9522b32a3/"
               target="_blank"
               rel="noreferrer"
               className="footer-link"
@@ -31,7 +31,7 @@ export default function Footer({ onBackToTop }) {
               </svg>
               LinkedIn
             </a>
-            <a href="mailto:your.email@example.com" className="footer-link">
+            <a href="mailto:aswinsaravanan564@gmail.com" className="footer-link">
               ✉ Email
             </a>
           </div>

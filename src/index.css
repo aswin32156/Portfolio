@@ -591,6 +591,33 @@ body, .navbar, .glass-card, .info-block, .about-card,
   transform: translateY(-2px);
 }
 
+.hero-btn-resume {
+  padding: 13px 28px;
+  background: rgba(0, 212, 255, 0.08);
+  color: var(--accent-cyan);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 212, 255, 0.35);
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.hero-btn-resume:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--accent-cyan);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 212, 255, 0.25);
+}
+
 /* Icon-only social buttons */
 .hero-social-icons {
   display: flex;
