@@ -15,7 +15,7 @@ const projects = [
     features: ['Curated garland catalog', 'Custom pickup scheduling', 'Razorpay & dynamic UPI payments', 'Digital receipt with counter QR', 'Real-time shop owner dashboard', 'Instant order audio alerts'],
     outcome: 'Engineered a modern garland pre-ordering web app connecting Supabase, Razorpay/UPI gateway, and live shop owner order chime.',
     github: 'https://github.com/aswin32156/Garland',
-    demo: null,
+    demo: 'https://garland-lyart.vercel.app/',
   },
   {
     id: 2,

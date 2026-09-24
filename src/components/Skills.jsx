@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 
 const skillCategories = {
-  'Programming': ['Java', 'Python', 'JavaScript', 'SQL'],
+  'Programming': ['Java', 'JavaScript', 'SQL'],
   'Java Development': ['Core Java', 'OOP', 'Data Structures', 'Collections', 'Exception Handling'],
-  'Frontend': ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React.js'],
-  'Backend': ['Node.js', 'Express.js', 'Spring Boot', 'REST APIs'],
+  'Frontend': ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
   'Databases': ['MySQL', 'SQLite', 'MongoDB'],
   'Tools': ['Git', 'GitHub', 'VS Code'],
 };

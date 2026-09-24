@@ -76,8 +76,8 @@ export default function Experience() {
             <ul className="exp-list">
               {[
                 'Java development — OOP, Data Structures, Collections, Exception Handling',
-                'Frontend development — HTML, CSS, JavaScript, Bootstrap, React.js',
-                'Backend APIs — Node.js, Express.js, REST design',
+                'Frontend development — HTML, CSS, JavaScript, Bootstrap',
+                'Software Design — Object-Oriented Principles & Clean Code',
                 'Database management — MySQL, SQLite, MongoDB',
                 'Version control — Git & GitHub workflow',
                 'Core CS fundamentals — Data Structures, Algorithms, DBMS, OS',

@@ -7,7 +7,7 @@ const aboutCards = [
   { icon: '🛠️', title: 'Software Dev', desc: 'Building Practical Applications' },
 ];
 
-const coreSkills = ['Java', 'OOP', 'DSA', 'React.js', 'Node.js', 'Spring Boot', 'MongoDB', 'MySQL', 'REST APIs'];
+const coreSkills = ['Java', 'OOP', 'Data Structures', 'JavaScript', 'HTML/CSS', 'Bootstrap', 'MySQL', 'MongoDB', 'Git'];
 
 export default function About() {
   const ref = useRef(null);
@@ -39,8 +39,8 @@ export default function About() {
             </p>
             <p>
               I enjoy transforming ideas into practical software applications and have worked on
-              academic and personal projects involving Java, JavaScript, React.js, Node.js,
-              MongoDB, MySQL, and SQLite.
+              academic and personal projects involving Java, JavaScript, HTML, CSS,
+              Bootstrap, MongoDB, MySQL, and SQLite.
             </p>
             <p>
               My primary interest is Java-based software development and full-stack application
