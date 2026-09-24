@@ -41,7 +41,7 @@ const projects = [
     features: ['Create / Join room', 'Secret room code', 'Synchronized playback', 'Queue & Lyrics', 'Listener count', 'Chat module'],
     outcome: 'Designed a real-time synchronization concept combining room management, media control, and multi-user interaction.',
     github: 'https://github.com/aswin32156/Music_sync',
-    demo: null,
+    demo: 'https://music-sync-0e4v.onrender.com/',
   },
   {
     id: 4,
